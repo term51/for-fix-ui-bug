@@ -7,19 +7,12 @@ import {
   useAppTheme,
 } from '@/shared/config';
 import { StatisticScreen } from '@/screens/statistic';
+
 import { HeaderBackground } from './ui/HeaderBackground';
-import { GeneralStatisticsScreen } from '@/screens/general-statistics';
-import { ObjectStatisticsScreen } from '@/screens/object-statistics';
-import { BonusesAndPointsScreen } from '@/screens/bonuses-and-points';
-import { ObjectStatisticsListScreen } from '@/screens/object-statistics-list';
-import { ScreenImportsType } from '@/app/navigation/stacks/model/types.ts';
+import { ScreenImportsType } from './model/types.ts';
 
 const screenImports: ScreenImportsType<StatisticStackEnum> = {
   [StatisticStackEnum.Statistics]: StatisticScreen,
-  // [StatisticStackEnum.GeneralStatistics]: GeneralStatisticsScreen,
-  // [StatisticStackEnum.ObjectStatisticsList]: ObjectStatisticsListScreen,
-  // [StatisticStackEnum.ObjectStatistics]: ObjectStatisticsScreen,
-  // [StatisticStackEnum.BonusesAndPoints]: BonusesAndPointsScreen,
 };
 
 const StatisticStack = createNativeStackNavigator<StatisticStackListType>();

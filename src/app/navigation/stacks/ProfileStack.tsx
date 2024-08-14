@@ -7,30 +7,12 @@ import {
   useAppTheme,
 } from '@/shared/config';
 import { ProfileScreen } from '@/screens/profile';
-import { PersonalDataScreen } from '@/screens/personal-data';
-import { OnlinePortfolioScreen } from '@/screens/online-portfolio';
-import { TypesOfWorksScreen } from '@/screens/types-of-works';
-import { PricingPoliciesScreen } from '@/screens/pricing-policies';
-import { UsedMaterialsScreen } from '@/screens/used-materials';
-import { ListOfCalculatorsScreen } from '@/screens/list-of-calculators';
-import { PricingPoliciesListScreen } from '@/screens/pricing-policies-list';
-import { UsedMaterialsListScreen } from '@/screens/used-materials-list';
-import { CalculatorEditorScreen } from '@/screens/calculator-editor';
 
 import { HeaderBackground } from './ui/HeaderBackground';
 import { ScreenImportsType } from './model/types.ts';
 
 const screenImports: ScreenImportsType<ProfileStackEnum> = {
   [ProfileStackEnum.Profile]: ProfileScreen,
-  // [ProfileStackEnum.PersonalData]: PersonalDataScreen,
-  // [ProfileStackEnum.OnlinePortfolio]: OnlinePortfolioScreen,
-  // [ProfileStackEnum.TypesOfWorks]: TypesOfWorksScreen,
-  // [ProfileStackEnum.PricingPoliciesList]: PricingPoliciesListScreen,
-  // [ProfileStackEnum.PricingPolicies]: PricingPoliciesScreen,
-  // [ProfileStackEnum.UsedMaterialsList]: UsedMaterialsListScreen,
-  // [ProfileStackEnum.UsedMaterials]: UsedMaterialsScreen,
-  // [ProfileStackEnum.ListOfCalculators]: ListOfCalculatorsScreen,
-  // [ProfileStackEnum.CalculatorEditor]: CalculatorEditorScreen,
 };
 const ProfileStack = createNativeStackNavigator<ProfileStackListType>();
 

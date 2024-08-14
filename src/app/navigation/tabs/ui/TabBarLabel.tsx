@@ -3,9 +3,9 @@ import { Text } from 'react-native';
 import { LabelPosition } from '@react-navigation/bottom-tabs/lib/typescript/src/types';
 
 import { NavigationTabsEnum } from '@/shared/config';
-import { assertNever } from '@/shared/lib/utils/utils';
 
 import { useStyles } from './styles';
+import {assertNever} from '@/shared/lib/utils/utils.ts';
 
 type Props = {
   routeName: NavigationTabsEnum;

@@ -3,14 +3,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { PostStackEnum, PostStackListType, useAppTheme } from '@/shared/config';
 import { PostsListScreen } from '@/screens/posts-list';
-// import { PostScreen } from '@/screens/post';
 
 import { HeaderBackground } from './ui/HeaderBackground';
 import { ScreenImportsType } from './model/types';
 
 const screenImports: ScreenImportsType<PostStackEnum> = {
   [PostStackEnum.PostsList]: PostsListScreen,
-  // [PostStackEnum.Post]: PostScreen,
 };
 
 const PostStack = createNativeStackNavigator<PostStackListType>();
